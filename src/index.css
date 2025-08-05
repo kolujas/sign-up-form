@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+  /* 62.5% of 16px user agent font size is 10px */
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+@font-face {
+  font-family: 'NorseBold';
+  src: url('../assets/fonts/Norse.otf') format('opentype'),
+    url('../assets/fonts/NorseBold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h2, p, label{
+  font-family: 'Roboto', sans-serif, Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: normal;
+}
+
+
+h1 {
+  font-family: 'NorseBold', sans-serif;
+  color: #fff;
+  font-size: 8rem;
+}
+
+h2,
+p {
+  font-size: 2.5rem;
+}
+
+label {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+p {
+  font-weight: bold;
+  font-size: 3rem;
+  padding: 0 2rem;
+}
+
+img {
+  width: 9rem;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.bg {
+  max-width: 100%;
+  background: url("https://images.unsplash.com/photo-1511207538754-e8555f2bc187?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat;
+  flex: 0 0 25%;
+}
+
+
+.sign-up-text {
+  display: flex;
+  flex: 2;
+  background-color: #f3f3f3;
+}
+
+.logo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 18rem;
+  padding: 2rem 0;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.welcome-container {
+  margin-top: 15rem;
+}
+
+.welcome-container p {
+  margin: 2rem 0;
+  font-size: 2.5rem;
+  padding: 0 0 1rem 4rem;
+  max-width: 80%;
+}
+
+.form-container{
+  margin-top: 4rem;
+}
+
+.form-white-container {
+  background-color: #fff;
+  margin: 2rem 0 3rem 0;
+  padding: 2rem 0 2rem 4rem;
+  box-shadow: 0 8px 12px -4px rgba(0, 0, 0, 0.2);
+}
+
+form{
+  margin: 2rem 0;
+}
+
+label {
+  display: block;
+  font-weight: 500;
+}
+
+form input {
+  border: 1px solid #E5E7EB;
+  min-height: 2.8rem;
+  border-radius: .5rem;
+  outline: none;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+}
+
+form input:focus{
+  transition: 300ms;
+  border: 1px solid rgb(75, 75, 250);
+  box-shadow: 2px 1px 5px #2c2c2c;
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
+/* input:valid {
+  border: 2px solid #0c8601;
+} */
+
+.fullname,
+.personal-data,
+.passwords{
+  display: flex;
+  justify-content: flex-start;
+  gap: 5rem;
+  padding: 1rem 0;
+}
+
+.register-wrapper{
+  background-color: #f3f3f3;
+  padding: 0;
+}
+
+.register-button{
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none; 
+  border-radius: 1rem;
+  background-color: #596D48;
+  color: #fff;
+  padding: 1.5rem 4rem;
+  margin: 3rem 0 0 4rem;
+  outline: none;
+}
+
+.register-button:hover{
+  transition: 300ms;
+  background-color: #455c33;
+}
+
+p.have-account{
+  font-size: 1.8rem;
+  font-weight: normal;
+  padding-left: 4rem;
+}
+
+.log-in{
+  color: #596D48;
+  font-weight: bold;
+}
